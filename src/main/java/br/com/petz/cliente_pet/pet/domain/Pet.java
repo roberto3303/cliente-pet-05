@@ -21,13 +21,15 @@ public class Pet {
     private UUID idPet;
     @NotBlank
     private String nomePet;
-    @NotBlank
     @Enumerated(EnumType.STRING)
     private Porte porte;
+    @NotNull
     @Enumerated(EnumType.STRING)
     private TipoPet tipoPet;
     private String microchip;
+    @NotBlank
     private String raca;
+    @NotNull
     @Enumerated(EnumType.STRING)
     private SexoPet sexo;
     private String pelagemCor;
